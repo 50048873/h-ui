@@ -1,6 +1,6 @@
 <template>
   <div>
-    这是一个alert组件
+    这是一个alert组件，哈哈
   </div>
 </template>
 <script>

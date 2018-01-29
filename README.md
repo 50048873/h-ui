@@ -11,10 +11,12 @@ npm install
 # serve with hot reload at localhost:8080
 npm run dev
 
-# 生成dist文件夹
+# 生成npm包步骤：
+
+# 1.生成dist文件夹
 npm run dist
 
-# 生成.tgz本地安装包
+# 2.生成.tgz本地安装包
 npm pack
 ```
 

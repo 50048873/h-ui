@@ -1,3 +1,4 @@
+import Vue from 'vue'
 import HAlert from './alert/src/main.vue'
 import HProgress from './progress/src/main.vue'
 
@@ -19,4 +20,10 @@ if (typeof window !== 'undefined' && window.Vue) {
   window.Vue.use(progress)
 }
 
-export {alert, progress}
+const numToWord = function(num) { 
+	return num
+}
+
+Vue.prototype.$numToWord = numToWord;
+
+export {alert, progress, numToWord}
