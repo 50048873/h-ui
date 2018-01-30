@@ -16,20 +16,12 @@
       <li><a href="http://vue-loader.vuejs.org/" target="_blank">vue-loader</a></li>
       <li><a href="https://github.com/vuejs/awesome-vue" target="_blank">awesome-vue</a></li>
     </ul>
-    <h-alert></h-alert>
-    <h-progress></h-progress>
   </div>
 </template>
 
 <script>
-import HAlert from './lib/alert/src/main.vue'
-import HProgress from './lib/progress/src/main.vue'
 export default {
   name: 'app',
-  components: {
-    HAlert,
-    HProgress
-  },
   data () {
     return {
       msg: 'Welcome to Your Vue.js App'

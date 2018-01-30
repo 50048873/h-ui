@@ -3,9 +3,9 @@ var webpack = require('webpack')
 
 module.exports = {
   entry: {
-    alert: './src/lib/alert/index.js',
+    detail1: './src/lib/detail1/index.js',
     progress: './src/lib/progress/index.js',
-    hui: './src/lib/index2.js'
+    hui: './src/lib/index.js'
   },
   output: {
     path: path.resolve(__dirname, './dist/js'),
@@ -22,6 +22,12 @@ module.exports = {
           commonjs2: "vue",
           amd: "vue",
           root: "Vue"
+      },
+      "jquery": {
+          commonjs: "jquery",
+          commonjs2: "jquery",
+          amd: "jquery",
+          root: "$"
       }
   },
   module: {

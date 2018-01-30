@@ -1,9 +1,10 @@
-import HAlert from './alert/src/main.vue'
+import Vue from 'vue'
+import HDetail1 from './detail1/main.vue'
 import HProgress from './progress/src/main.vue'
 
-const alert = {
+const _HDetail1 = {
   install: function (Vue) {
-    Vue.component(HAlert.name, HAlert)
+    Vue.component(HDetail1.name, HDetail1)
   }
 };
 
@@ -15,8 +16,14 @@ const progress = {
 
 // 这里的判断很重要
 if (typeof window !== 'undefined' && window.Vue) {
-  window.Vue.use(alert)
+  window.Vue.use(_HDetail1)
   window.Vue.use(progress)
 }
 
-export {alert, progress}
+const numToWord = function(num) { 
+	return num
+}
+
+Vue.prototype.$numToWord = numToWord;
+
+export {_HDetail1, progress, numToWord}
