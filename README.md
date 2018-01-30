@@ -13,11 +13,14 @@ npm run dev
 
 # 生成npm包步骤：
 
-# 1.生成dist文件夹
+# 生成dist文件夹
 npm run dist
 
-# 2.生成.tgz本地安装包
+# 生成.tgz本地安装包
 npm pack
+
+# 发布到npm
+注册个npm账号，在你要发布的项目目录执行npm login，输入账号密码和邮箱，然后npm publish就发布成功了
 
 
 # 说明：
